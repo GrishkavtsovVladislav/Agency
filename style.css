@@ -1,0 +1,628 @@
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+.header {
+    width: 100vw;
+    height: 134px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inika', serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.header .wrapper {
+    width: 1220px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_logo {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: -5px;
+}
+
+.header_logo span {
+    height: 17px;
+}
+
+.header_list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 452px;
+    line-height: 50px;
+    color: #010201;
+}
+
+.header_red {
+    color: #E06733;
+    font-weight: 700;
+}
+
+.header_link {
+    transition: .3s;
+}
+
+.header_link:hover {
+    color: #E06733;
+    font-weight: 700;
+}
+
+.welcome {
+    width: 100vw;
+    height: 532px;
+    background-color: rgb(255, 187, 61);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.welcome .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1222px;
+    height: 500px;
+}
+
+.welcome__wrapper__photo {
+    width: 611px;
+    height: 500px;
+    position: relative;
+}
+
+.welcome__wrapper__photo_block {
+    width: 225px;
+    height: 400px;
+    background-color: white;
+    position: absolute;
+    transition: z-index ease-in-out 0.1s;
+}
+
+.one {
+    top: 0px;
+    left: 95px;
+    z-index: 5;
+    background-image: url(6078ba0bd6ab6325943c813e.jpg);
+    background-size: cover;
+}
+
+.two {
+    top: 25px;
+    left: 135px;
+    z-index: 4;
+    background-image: url(alamayah-raiskiy-otel-v-indonesii-pufikhomes-17.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.three {
+    top: 50px;
+    left: 175px;
+    z-index: 3;
+    background-image: url(13706.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.four {
+    top: 75px;
+    left: 215px;
+    z-index: 2;
+    background-image: url(1623165412_7-oir_mobi-p-otel-na-beregu-morya-priroda-krasivo-foto-7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.five {
+    top: 100px;
+    left: 255px;
+    z-index: 1;
+    background-image: url(du2kf9bzeaz1sp7ltq1ygj566xiz6nrx.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.welcome__wrapper__photo_block:hover {
+    z-index: 6;
+    transform: translate(5px, -5px);
+    cursor: pointer;
+}
+
+.welcome__wrapper__text {
+    width: 611px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.welcome__wrapper__text h1 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 50px;
+    color: #717171;
+}
+
+.welcome__wrapper__text p {
+    font-size: 25px;
+    line-height: 35px;
+    color: #636060;
+    margin-top: 15px;
+}
+
+.about {
+    width: 100vw;
+    height: 480px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .wrapper {
+    width: 1222px;
+    height: 479px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__wrapper__text {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 55px;
+    font-family: 'Inika', sans-serif;
+    color: #717171;
+}
+
+.about__wrapper__us {
+    width: 100%;
+    height: 75%;
+    font-weight: 400;
+    font-size: 39px;
+    font-family: 'Inika', sans-serif;
+    color: #636060;
+    text-align: center;
+}
+
+.service {
+    width: 100vw;
+    height: 900px;
+    background-color: rgb(255, 187, 61);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.service .wrapper {
+    width: 1222px;
+    height: 870px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service__wrapper__one {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 55px;
+    font-family: 'Inika', sans-serif;
+    color: #717171;
+}
+
+.service__wrapper__two {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.service__wrapper__three {
+    width: 66%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.box {
+    height: 100%;
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    background-color: white;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+}
+
+.b {
+    width: 35%;
+    height: 30%;
+}
+
+.bo {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 39px;
+    font-family: 'Inika', sans-serif;
+    color: #636060;
+}
+
+.boxs {
+    width: 100%;
+    height: 55%;
+    font-size: 27px;
+    line-height: 35px;
+    color: #636060;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.service__wrapper__two_air_tours_start {
+    background-image: url(icons8-телеграмма-app-100.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.service__wrapper__two_bus_rental_start {
+    background-image: url(icons8-часы-100.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.service__wrapper__two_bus_tours_start {
+    background-image: url(icons8-автобус-100.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.service__wrapper__three_transfer_start {
+    background-image: url(icons8-такси-96.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.service__wrapper__three_for_travel_agencies_start {
+    background-image: url(icons8-рукопожатие-100.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.prices {
+    width: 100vw;
+    height: 1320px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.prices .wrapper {
+    width: 1222px;
+    height: 1300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.prices__wrapper__text {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 55px;
+    font-family: 'Inika', sans-serif;
+    color: #717171;
+}
+
+.prices__wrapper__offers {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+
+}
+
+.prices__wrapper__offers:hover {
+    cursor: pointer;
+}
+
+.countries {
+    height: 340px;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgb(127, 127, 127);
+}
+
+.countries.active {
+    width: 30%;
+    height: 70%;
+    position: fixed;
+    top: 15%;
+    left: 35.5%;
+    z-index: 999;
+}
+
+.photo {
+    width: 100%;
+    height: 80%;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+}
+
+.text {
+    width: 100%;
+    height: 20%;
+    border-bottom-left-radius: 27px;
+    border-bottom-right-radius: 27px;
+}
+
+.prices__wrapper__offers_turkey_photo {
+    background-image: url(Турция.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.prices__wrapper__offers_egypt_photo {
+    background-image: url(Египет.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.prices__wrapper__offers_uae_photo {
+    background-image: url(ОАЭ.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.prices__wrapper__offers_georgia_photo {
+    background-image: url(Грузия.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.prices__wrapper__offers_italy_photo {
+    background-image: url(Италия.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.prices__wrapper__offers_spain_photo {
+    background-image: url(Испания.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.prices__wrapper__offers_cyprus_photo {
+    background-image: url(Cyprus.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.prices__wrapper__offers_cuba_photo {
+    background-image: url(Cuba.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.prices__wrapper__offers_bulgaria_photo {
+    background-image: url(Болгария.jpg);
+    background-size: cover;
+    background-position: center;   
+}
+
+.prices__wrapper__offers_montenegro_photo {
+    background-image: url(Черногория.jpg);
+    background-size: cover;
+    background-position: center; 
+}
+
+.prices__wrapper__offers_india_photo {
+    background-image: url(Индия.jpg);
+    background-size: cover;
+    background-position: center; 
+}
+
+.prices__wrapper__offers_dominican_photo {
+    background-image: url(Доминикана.jpg);
+    background-size: cover;
+    background-position: center;    
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 39px;
+    font-family: 'Inika', sans-serif;
+    color: #636060;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal_all {
+    border: 1px solid grey;
+    background-color: white;
+    text-align: center;
+    width: 50%;
+    height: 70%;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+img {
+    width: 60%;
+    height: 60%;
+}
+
+.h2 {
+    font-weight: 400;
+    font-size: 39px;
+    font-family: 'Inika', sans-serif;
+    color: #636060;
+}
+
+.p {
+    font-size: 16px;
+    color: #636060;
+}
+
+.footer {
+    width: 100vw;
+    height: 280px;
+    background-color: rgb(255, 187, 61);
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.footer .wrapper {
+    width: 1222px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.footer__wrapper__contacts {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__wrapper__networks {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer_wrapper_icons_ico {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.footer__wrapper__contacts_address {
+    width: 33%;
+    height: 100%;
+    text-align: center;
+}
+
+.footer__wrapper__contacts_working_mode {
+    width: 33%;
+    height: 100%;
+    text-align: center;
+}
+
+.footer__wrapper__contacts_phones {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__wrapper__contacts_face {
+    font-weight: 700;
+    font-size: 37px;
+    font-family: 'Inika', sans-serif;
+    color: #717171;
+}
+
+.footer__wrapper__contacts_faces {
+    font-weight: 400;
+    font-size: 25px;
+    font-family: 'Inika', sans-serif;
+    color: #636060;
+}
+
+.footer__wrapper__contacts_phones_text {
+    width: 100%;
+    height: 70%;
+    text-align: center;
+}
+
+.footer__wrapper__contacts_phones_icons {
+    width: 60%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
